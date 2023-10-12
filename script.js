@@ -6,7 +6,7 @@ function scoreCounter(){
     document.querySelector("#scoreval").textContent = score;
 }
 function decreaseScore() {
-    // Decrease the score by a certain amount (e.g., 5 points)
+    // Decrease the score by 5 points
     score -= 5;
     if (score < 0) {
         score = 0; // Ensure the score is not negative
@@ -18,7 +18,7 @@ function hitValue(){
     document.querySelector(`#hitval`).textContent=hitrn;
 }
 function makeBubble(){
-    var clutter = "";
+    var clutter = ""; // used to store bubbles 
 for(let i= 1; i<=192; i++){
     var rn = Math.floor(Math.random()*10);
    clutter+= `<div class="bubble">${rn}</div>`;
